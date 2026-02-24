@@ -1,0 +1,31 @@
+# Windsurf Rules
+#
+# These rules are automatically applied to your chat context in Windsurf.
+
+## General Principles
+
+1.  **Conciseness**: Keep responses to the point.
+2.  **Context**: Leverage the full file context.
+3.  **Modern**: Use the latest language features.
+4.  **Security**: Avoid known vulnerabilities.
+
+## Development Workflow
+
+### Frontend (React/Next.js)
+*   Prefer functional components.
+*   Use TypeScript for strong typing.
+*   Use Tailwind CSS for styling.
+*   Use `swr` or `react-query` for data fetching.
+
+### Backend (Node.js/Python)
+*   Use async/await for asynchronous operations.
+*   Use dependency injection for testability.
+*   Use structured logging.
+
+### Testing
+*   Write unit tests for all business logic.
+*   Use `jest` or `pytest`.
+
+## Documentation
+*   Document complex logic inline.
+*   Update swagger/OpenAPI specs when changing API endpoints.

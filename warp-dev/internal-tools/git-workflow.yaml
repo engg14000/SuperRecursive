@@ -1,0 +1,30 @@
+# Warp.dev: Git Workflow Configuration
+
+name: Feature Branch Workflow
+
+trigger:
+  - name: "Git Feature Start"
+    description: "Start a new feature branch"
+    command: "git checkout -b feature/{{feature_name}}"
+
+  - name: "Git Commit & Push"
+    description: "Commit changes and push to remote"
+    command: |
+      git add .
+      git commit -m "{{commit_message}}"
+      git push origin feature/{{feature_name}}
+
+  - name: "Git Rebase Main"
+    description: "Rebase current branch onto main"
+    command: |
+      git checkout main
+      git pull origin main
+      git checkout feature/{{feature_name}}
+      git rebase main
+
+  - name: "Git Cleanup"
+    description: "Delete feature branch after merge"
+    command: |
+      git checkout main
+      git pull origin main
+      git branch -d feature/{{feature_name}}

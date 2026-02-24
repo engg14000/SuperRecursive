@@ -1,0 +1,15 @@
+# .replit Configuration
+
+modules = ["python-3.10", "poetry"]
+
+run = "python main.py"
+
+[nix]
+channel = "stable-23_05"
+
+[packager]
+language = "python3"
+
+[packager.features]
+packageSearch = true
+guessImports = true

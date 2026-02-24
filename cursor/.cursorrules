@@ -1,0 +1,30 @@
+# Cursor Rules
+#
+# These rules are automatically applied to your chat context in Cursor.
+# Use them to guide the AI's behavior, style, and domain knowledge.
+
+## General Principles
+
+1.  **Be Concise**: Avoid verbose explanations unless asked. Focus on code.
+2.  **Modern Standards**: Use the latest stable versions of libraries and frameworks.
+3.  **Type Safety**: Always use static typing where available (e.g., TypeScript, Python type hints).
+4.  **Error Handling**: Implement robust error handling. Do not swallow exceptions.
+5.  **Testing**: Suggest tests for new code.
+
+## Tech Stack Specifics
+
+### React / Next.js
+*   Use Functional Components and Hooks.
+*   Use 'use client' directive only when necessary.
+*   Prefer Server Components for data fetching.
+*   Use Tailwind CSS for styling.
+
+### Python
+*   Follow PEP 8 style guide.
+*   Use `pytest` for testing.
+*   Use `pydantic` for data validation.
+*   Use `asyncio` for asynchronous operations.
+
+## Documentation
+*   Add docstrings to all public functions and classes.
+*   Update README.md when architecture changes.
