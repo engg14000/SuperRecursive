@@ -18,7 +18,7 @@ Thank you for your interest in contributing! SuperRecursive thrives on community
 
 ```bash
 # 1. Fork and clone
-git clone https://github.com/YOUR_USERNAME/SuperRecursive.git
+git clone https://github.com/engg14000/SuperRecursive.git
 cd SuperRecursive
 
 # 2. Create a feature branch

@@ -26,7 +26,7 @@ Pick your tool, copy the config, and start coding with SuperRecursive prompts.
 
 ```bash
 # Clone the starter kit
-git clone https://github.com/YOUR_USERNAME/SuperRecursive.git
+git clone https://github.com/engg14000/SuperRecursive.git
 cd SuperRecursive/starter-kit
 
 # Copy config for your tool

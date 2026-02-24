@@ -146,20 +146,18 @@ The **first repo to systematize "vibe coding"** — mood-based prompt engineerin
 </tr>
 </table>
 
-### How SuperRecursive Compares
+### What Makes SuperRecursive Different
 
-| Feature | SuperRecursive | x1xhlol/system-prompts | asgeirtj/system_prompts_leaks | dair-ai/Prompt-Engineering-Guide |
-|---------|:-:|:-:|:-:|:-:|
-| Tool-specific prompts | ✅ 30+ tools | ✅ 50+ tools | ⚠️ 5 models | ❌ Generic |
-| Recursive/self-improving | ✅ Core feature | ❌ | ❌ | ❌ |
-| Context engineering templates | ✅ 100+ | ❌ | ❌ | ⚠️ Some |
-| Vibe coding moods | ✅ Unique | ❌ | ❌ | ❌ |
-| Agent skills framework | ✅ Full framework | ❌ | ❌ | ❌ |
-| Benchmarks | ✅ Comparative | ❌ | ❌ | ⚠️ Academic |
-| Multi-agent orchestration | ✅ | ❌ | ❌ | ❌ |
-| Community submissions | ✅ PR-based | ✅ | ⚠️ Limited | ✅ |
-| API / Machine-readable | ✅ JSON schemas | ❌ | ❌ | ❌ |
-| Starter kit | ✅ Copy & go | ❌ | ❌ | ❌ |
+| Feature | Description |
+|---------|-------------|
+| 🔄 **Recursive Self-Improvement** | Prompts that evaluate and improve themselves — our core innovation |
+| 🧠 **Context Engineering** | 100+ templates for optimal AI context management |
+| 🎨 **Vibe Coding** | First-ever mood-based prompt system for developer flow states |
+| 🤖 **Agent Skills Framework** | Complete toolkit: planning, memory, tool-calling, multi-agent |
+| 🔧 **30+ Tool Configs** | Ready-to-use configs for Cursor, Claude, Copilot, v0, and more |
+| 📊 **Benchmarks** | Data-driven technique comparisons across task types |
+| 🚀 **Starter Kit** | Copy-paste configs to supercharge your setup in 30 seconds |
+| 📋 **JSON Schemas** | Machine-readable tool-calling definitions for agent builders |
 
 ---
 

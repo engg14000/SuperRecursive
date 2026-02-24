@@ -25,9 +25,9 @@ Top contributors to SuperRecursive:
 
 ## 💬 Contact & Discussion
 
-- **GitHub Issues**: [Report bugs, request features](https://github.com/YOUR_USERNAME/SuperRecursive/issues)
-- **GitHub Discussions**: [Ask questions, share ideas](https://github.com/YOUR_USERNAME/SuperRecursive/discussions)
-- **Pull Requests**: [Contribute directly](https://github.com/YOUR_USERNAME/SuperRecursive/pulls)
+- **GitHub Issues**: [Report bugs, request features](https://github.com/engg14000/SuperRecursive/issues)
+- **GitHub Discussions**: [Ask questions, share ideas](https://github.com/engg14000/SuperRecursive/discussions)
+- **Pull Requests**: [Contribute directly](https://github.com/engg14000/SuperRecursive/pulls)
 
 ## 📋 Showcase
 

@@ -1,27 +1,21 @@
 # 🌟 Awesome Lists
 
-> Curated collections of the best resources for AI prompt engineering, agent development, and context engineering.
+> Original curated knowledge bases for AI prompt engineering, context engineering, and agent development.
 
 ## 📋 Lists
 
-### [Awesome Prompt Engineering](prompt-engineering.md)
-The definitive collection of prompt engineering resources — papers, guides, tools, and communities.
+### [Prompt Techniques Cheat Sheet](prompt-techniques-cheatsheet.md)
+Every major prompting technique in one quick-reference guide — when to use each, syntax patterns, and effectiveness ratings.
 
-### [Awesome AI Agents](ai-agents.md)
-Frameworks, papers, and tools for building autonomous AI agents.
+### [AI Model Capabilities Matrix](model-capabilities-matrix.md)
+What each major AI model excels at — context windows, strengths, weaknesses, and optimal use cases.
 
-### [Awesome System Prompts](system-prompts.md)
-Repositories and collections of system prompts from across the AI ecosystem.
+### [Prompt Anti-Patterns](prompt-anti-patterns.md)
+The most common mistakes in prompt engineering and how to fix them.
 
-### [Awesome AI Dev Tools](ai-dev-tools.md)
-AI-powered development tools, IDE plugins, and coding assistants.
+### [Context Engineering Patterns](context-engineering-patterns.md)
+A pattern catalog for structuring AI context — from simple to advanced.
 
-## 🤝 Contributing
+## 💡 How to Use
 
-Found an amazing resource? Add it! See our [Contributing Guide](../CONTRIBUTING.md).
-
-Requirements for new links:
-- Must be actively maintained (updated within 6 months)
-- Must be high quality (well-written, accurate, useful)
-- Must be accessible (no paywalled content — prefer free resources)
-- Must include a brief description of why it's awesome
+Each list is designed as a **quick-reference guide** you can bookmark and return to. They're based on practical experience and community knowledge, not just theory.
