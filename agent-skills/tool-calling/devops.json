@@ -1,0 +1,201 @@
+{
+    "tool_calling_schemas": {
+        "version": "1.0",
+        "description": "JSON schemas for DevOps and infrastructure tools",
+        "tools": [
+            {
+                "name": "docker_command",
+                "description": "Execute Docker operations",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "action": {
+                            "type": "string",
+                            "enum": [
+                                "build",
+                                "run",
+                                "stop",
+                                "rm",
+                                "ps",
+                                "logs",
+                                "exec",
+                                "compose-up",
+                                "compose-down"
+                            ]
+                        },
+                        "image": {
+                            "type": "string"
+                        },
+                        "container_name": {
+                            "type": "string"
+                        },
+                        "ports": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Port mappings (host:container)"
+                        },
+                        "volumes": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "env_vars": {
+                            "type": "object",
+                            "additionalProperties": {
+                                "type": "string"
+                            }
+                        },
+                        "dockerfile_path": {
+                            "type": "string"
+                        },
+                        "compose_file": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "action"
+                    ]
+                }
+            },
+            {
+                "name": "git_operation",
+                "description": "Execute Git version control operations",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "action": {
+                            "type": "string",
+                            "enum": [
+                                "clone",
+                                "commit",
+                                "push",
+                                "pull",
+                                "branch",
+                                "checkout",
+                                "merge",
+                                "rebase",
+                                "stash",
+                                "log",
+                                "diff",
+                                "status"
+                            ]
+                        },
+                        "repo_url": {
+                            "type": "string"
+                        },
+                        "branch": {
+                            "type": "string"
+                        },
+                        "message": {
+                            "type": "string"
+                        },
+                        "files": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "action"
+                    ]
+                }
+            },
+            {
+                "name": "ci_cd_trigger",
+                "description": "Trigger CI/CD pipeline operations",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "platform": {
+                            "type": "string",
+                            "enum": [
+                                "github-actions",
+                                "gitlab-ci",
+                                "circleci",
+                                "jenkins"
+                            ]
+                        },
+                        "action": {
+                            "type": "string",
+                            "enum": [
+                                "trigger",
+                                "status",
+                                "cancel",
+                                "retry",
+                                "logs"
+                            ]
+                        },
+                        "workflow": {
+                            "type": "string"
+                        },
+                        "branch": {
+                            "type": "string"
+                        },
+                        "parameters": {
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "platform",
+                        "action"
+                    ]
+                }
+            },
+            {
+                "name": "cloud_deploy",
+                "description": "Deploy applications to cloud platforms",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "platform": {
+                            "type": "string",
+                            "enum": [
+                                "vercel",
+                                "netlify",
+                                "railway",
+                                "fly-io",
+                                "aws",
+                                "gcp",
+                                "azure",
+                                "heroku"
+                            ]
+                        },
+                        "action": {
+                            "type": "string",
+                            "enum": [
+                                "deploy",
+                                "rollback",
+                                "status",
+                                "logs",
+                                "scale",
+                                "env-set"
+                            ]
+                        },
+                        "project": {
+                            "type": "string"
+                        },
+                        "environment": {
+                            "type": "string",
+                            "enum": [
+                                "development",
+                                "staging",
+                                "production"
+                            ]
+                        },
+                        "config": {
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "platform",
+                        "action"
+                    ]
+                }
+            }
+        ]
+    }
+}

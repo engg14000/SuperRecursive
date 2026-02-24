@@ -1,0 +1,153 @@
+{
+    "tool_calling_schemas": {
+        "version": "1.0",
+        "description": "JSON schemas for database interaction tools",
+        "tools": [
+            {
+                "name": "sql_query",
+                "description": "Execute a SQL query against a relational database",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "connection_string": {
+                            "type": "string"
+                        },
+                        "query": {
+                            "type": "string"
+                        },
+                        "params": {
+                            "type": "array",
+                            "items": {},
+                            "description": "Parameterized query values"
+                        },
+                        "database_type": {
+                            "type": "string",
+                            "enum": [
+                                "postgresql",
+                                "mysql",
+                                "sqlite",
+                                "mssql"
+                            ]
+                        },
+                        "timeout_ms": {
+                            "type": "integer",
+                            "default": 30000
+                        }
+                    },
+                    "required": [
+                        "query",
+                        "database_type"
+                    ]
+                },
+                "returns": {
+                    "type": "object",
+                    "properties": {
+                        "rows": {
+                            "type": "array",
+                            "items": {
+                                "type": "object"
+                            }
+                        },
+                        "row_count": {
+                            "type": "integer"
+                        },
+                        "columns": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "name": "nosql_operation",
+                "description": "Execute NoSQL database operations",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "database_type": {
+                            "type": "string",
+                            "enum": [
+                                "mongodb",
+                                "dynamodb",
+                                "redis",
+                                "firestore"
+                            ]
+                        },
+                        "operation": {
+                            "type": "string",
+                            "enum": [
+                                "find",
+                                "insert",
+                                "update",
+                                "delete",
+                                "aggregate"
+                            ]
+                        },
+                        "collection": {
+                            "type": "string"
+                        },
+                        "filter": {
+                            "type": "object"
+                        },
+                        "document": {
+                            "type": "object"
+                        },
+                        "options": {
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "database_type",
+                        "operation",
+                        "collection"
+                    ]
+                }
+            },
+            {
+                "name": "vector_search",
+                "description": "Perform semantic search on a vector database",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "database_type": {
+                            "type": "string",
+                            "enum": [
+                                "pinecone",
+                                "weaviate",
+                                "qdrant",
+                                "chromadb",
+                                "pgvector"
+                            ]
+                        },
+                        "query_text": {
+                            "type": "string",
+                            "description": "Text to embed and search for"
+                        },
+                        "query_vector": {
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            }
+                        },
+                        "collection": {
+                            "type": "string"
+                        },
+                        "top_k": {
+                            "type": "integer",
+                            "default": 10
+                        },
+                        "filter": {
+                            "type": "object"
+                        }
+                    },
+                    "required": [
+                        "database_type",
+                        "collection"
+                    ]
+                }
+            }
+        ]
+    }
+}
