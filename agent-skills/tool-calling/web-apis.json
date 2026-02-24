@@ -1,0 +1,153 @@
+{
+  "tool_calling_schemas": {
+    "version": "1.0",
+    "description": "JSON schemas for web and API interaction tools",
+    "tools": [
+      {
+        "name": "http_request",
+        "description": "Make an HTTP request to a URL",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "method": {
+              "type": "string",
+              "enum": ["GET", "POST", "PUT", "PATCH", "DELETE", "HEAD", "OPTIONS"],
+              "description": "HTTP method"
+            },
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Target URL"
+            },
+            "headers": {
+              "type": "object",
+              "description": "HTTP headers as key-value pairs",
+              "additionalProperties": { "type": "string" }
+            },
+            "body": {
+              "description": "Request body (for POST/PUT/PATCH)",
+              "oneOf": [
+                { "type": "string" },
+                { "type": "object" }
+              ]
+            },
+            "timeout_ms": {
+              "type": "integer",
+              "default": 30000,
+              "description": "Request timeout in milliseconds"
+            }
+          },
+          "required": ["method", "url"]
+        },
+        "returns": {
+          "type": "object",
+          "properties": {
+            "status_code": { "type": "integer" },
+            "headers": { "type": "object" },
+            "body": { "type": "string" },
+            "elapsed_ms": { "type": "integer" }
+          }
+        }
+      },
+      {
+        "name": "graphql_query",
+        "description": "Execute a GraphQL query or mutation",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "endpoint": {
+              "type": "string",
+              "format": "uri",
+              "description": "GraphQL endpoint URL"
+            },
+            "query": {
+              "type": "string",
+              "description": "GraphQL query or mutation string"
+            },
+            "variables": {
+              "type": "object",
+              "description": "Query variables"
+            },
+            "headers": {
+              "type": "object",
+              "additionalProperties": { "type": "string" }
+            }
+          },
+          "required": ["endpoint", "query"]
+        }
+      },
+      {
+        "name": "web_search",
+        "description": "Search the web for information",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "description": "Search query"
+            },
+            "num_results": {
+              "type": "integer",
+              "default": 10,
+              "description": "Number of results to return"
+            },
+            "domain_filter": {
+              "type": "string",
+              "description": "Limit results to a specific domain"
+            }
+          },
+          "required": ["query"]
+        }
+      },
+      {
+        "name": "web_scrape",
+        "description": "Extract content from a web page",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "selector": {
+              "type": "string",
+              "description": "CSS selector to extract specific content"
+            },
+            "format": {
+              "type": "string",
+              "enum": ["text", "html", "markdown"],
+              "default": "markdown"
+            },
+            "wait_for": {
+              "type": "string",
+              "description": "CSS selector to wait for before extracting"
+            }
+          },
+          "required": ["url"]
+        }
+      },
+      {
+        "name": "download_file",
+        "description": "Download a file from a URL",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "destination": {
+              "type": "string",
+              "description": "Local file path to save the downloaded file"
+            },
+            "overwrite": {
+              "type": "boolean",
+              "default": false
+            }
+          },
+          "required": ["url", "destination"]
+        }
+      }
+    ]
+  }
+}

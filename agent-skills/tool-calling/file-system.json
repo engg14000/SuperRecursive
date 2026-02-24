@@ -1,0 +1,242 @@
+{
+    "tool_calling_schemas": {
+        "version": "1.0",
+        "description": "JSON schemas for file system interaction tools",
+        "tools": [
+            {
+                "name": "read_file",
+                "description": "Read the contents of a file",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "path": {
+                            "type": "string",
+                            "description": "Absolute or relative path to the file"
+                        },
+                        "encoding": {
+                            "type": "string",
+                            "default": "utf-8",
+                            "description": "File encoding"
+                        },
+                        "start_line": {
+                            "type": "integer",
+                            "description": "Start reading from this line (1-indexed)"
+                        },
+                        "end_line": {
+                            "type": "integer",
+                            "description": "Stop reading at this line (inclusive)"
+                        }
+                    },
+                    "required": [
+                        "path"
+                    ]
+                },
+                "returns": {
+                    "type": "object",
+                    "properties": {
+                        "content": {
+                            "type": "string"
+                        },
+                        "total_lines": {
+                            "type": "integer"
+                        },
+                        "size_bytes": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            },
+            {
+                "name": "write_file",
+                "description": "Write content to a file, creating it if necessary",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "path": {
+                            "type": "string"
+                        },
+                        "content": {
+                            "type": "string"
+                        },
+                        "encoding": {
+                            "type": "string",
+                            "default": "utf-8"
+                        },
+                        "create_dirs": {
+                            "type": "boolean",
+                            "default": true
+                        },
+                        "overwrite": {
+                            "type": "boolean",
+                            "default": false
+                        }
+                    },
+                    "required": [
+                        "path",
+                        "content"
+                    ]
+                }
+            },
+            {
+                "name": "edit_file",
+                "description": "Make targeted edits to a file without rewriting the entire content",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "path": {
+                            "type": "string"
+                        },
+                        "edits": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "target": {
+                                        "type": "string",
+                                        "description": "Exact text to find and replace"
+                                    },
+                                    "replacement": {
+                                        "type": "string",
+                                        "description": "Text to replace with"
+                                    }
+                                },
+                                "required": [
+                                    "target",
+                                    "replacement"
+                                ]
+                            }
+                        }
+                    },
+                    "required": [
+                        "path",
+                        "edits"
+                    ]
+                }
+            },
+            {
+                "name": "search_files",
+                "description": "Search for files matching patterns",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "directory": {
+                            "type": "string"
+                        },
+                        "pattern": {
+                            "type": "string",
+                            "description": "Glob pattern"
+                        },
+                        "content_match": {
+                            "type": "string",
+                            "description": "Search within file contents"
+                        },
+                        "max_depth": {
+                            "type": "integer",
+                            "default": 10
+                        },
+                        "file_type": {
+                            "type": "string",
+                            "enum": [
+                                "file",
+                                "directory",
+                                "any"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "directory"
+                    ]
+                }
+            },
+            {
+                "name": "list_directory",
+                "description": "List contents of a directory",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "path": {
+                            "type": "string"
+                        },
+                        "recursive": {
+                            "type": "boolean",
+                            "default": false
+                        },
+                        "include_hidden": {
+                            "type": "boolean",
+                            "default": false
+                        }
+                    },
+                    "required": [
+                        "path"
+                    ]
+                }
+            },
+            {
+                "name": "delete_file",
+                "description": "Delete a file or directory",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "path": {
+                            "type": "string"
+                        },
+                        "recursive": {
+                            "type": "boolean",
+                            "default": false,
+                            "description": "Required for directories"
+                        }
+                    },
+                    "required": [
+                        "path"
+                    ]
+                }
+            },
+            {
+                "name": "move_file",
+                "description": "Move or rename a file",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "source": {
+                            "type": "string"
+                        },
+                        "destination": {
+                            "type": "string"
+                        },
+                        "overwrite": {
+                            "type": "boolean",
+                            "default": false
+                        }
+                    },
+                    "required": [
+                        "source",
+                        "destination"
+                    ]
+                }
+            },
+            {
+                "name": "copy_file",
+                "description": "Copy a file or directory",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "source": {
+                            "type": "string"
+                        },
+                        "destination": {
+                            "type": "string"
+                        },
+                        "recursive": {
+                            "type": "boolean",
+                            "default": false
+                        }
+                    },
+                    "required": [
+                        "source",
+                        "destination"
+                    ]
+                }
+            }
+        ]
+    }
+}
