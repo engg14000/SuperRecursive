@@ -6,18 +6,18 @@
 
 | Technique | One-Liner | Best For | Complexity |
 |-----------|-----------|----------|:---:|
-| **Zero-Shot** | Just ask the question directly | Simple tasks, factual Q&A | ⭐ |
-| **Few-Shot** | Provide 2-5 examples before asking | Classification, formatting | ⭐⭐ |
-| **Chain-of-Thought (CoT)** | "Think step by step" | Math, logic, debugging | ⭐⭐ |
-| **Zero-Shot CoT** | Append "Let's think step by step" | Quick reasoning without examples | ⭐ |
-| **Tree-of-Thought (ToT)** | Explore multiple solution paths | Design decisions, complex problems | ⭐⭐⭐ |
-| **ReAct** | Interleave Thought → Action → Observation | Research, investigation, tool use | ⭐⭐⭐ |
-| **Reflexion** | Try → Evaluate → Reflect → Retry | Iterative improvement, code writing | ⭐⭐⭐ |
-| **Self-Consistency** | Generate multiple answers, pick majority | High-stakes decisions | ⭐⭐ |
-| **Role Prompting** | "You are a senior {role}" | Domain-specific answers | ⭐ |
-| **Structured Output** | "Respond in JSON/YAML/table format" | Data extraction, pipelines | ⭐⭐ |
-| **Mega-Prompt** | One massive, multi-section prompt | Complex one-shot tasks | ⭐⭐⭐ |
-| **Prompt Chaining** | Output of prompt A feeds into prompt B | Multi-step workflows | ⭐⭐⭐ |
+| **Zero-Shot** | Just ask the question directly | Simple tasks, factual Q&A | ? |
+| **Few-Shot** | Provide 2-5 examples before asking | Classification, formatting | ?? |
+| **Chain-of-Thought (CoT)** | "Think step by step" | Math, logic, debugging | ?? |
+| **Zero-Shot CoT** | Append "Let's think step by step" | Quick reasoning without examples | ? |
+| **Tree-of-Thought (ToT)** | Explore multiple solution paths | Design decisions, complex problems | ??? |
+| **ReAct** | Interleave Thought ? Action ? Observation | Research, investigation, tool use | ??? |
+| **Reflexion** | Try ? Evaluate ? Reflect ? Retry | Iterative improvement, code writing | ??? |
+| **Self-Consistency** | Generate multiple answers, pick majority | High-stakes decisions | ?? |
+| **Role Prompting** | "You are a senior {role}" | Domain-specific answers | ? |
+| **Structured Output** | "Respond in JSON/YAML/table format" | Data extraction, pipelines | ?? |
+| **Mega-Prompt** | One massive, multi-section prompt | Complex one-shot tasks | ??? |
+| **Prompt Chaining** | Output of prompt A feeds into prompt B | Multi-step workflows | ??? |
 
 ## Technique Details
 
@@ -34,11 +34,11 @@ What is the capital of France?
 ```
 Classify the sentiment:
 
-"I love this product!" → Positive
-"Terrible experience." → Negative
-"It's okay I guess." → Neutral
+"I love this product!" ? Positive
+"Terrible experience." ? Negative
+"It's okay I guess." ? Neutral
 
-"Best purchase I've ever made!" → 
+"Best purchase I've ever made!" ? 
 ```
 **When**: Classification, consistent formatting, the model needs to see the pattern
 **When NOT**: Creative tasks, simple questions
@@ -118,7 +118,7 @@ in web application security and a deep knowledge of OWASP Top 10.
 Review this code for security vulnerabilities...
 ```
 **When**: Domain expertise needed, consistent persona
-**Tip**: Be specific — "senior security engineer" > "expert"
+**Tip**: Be specific - "senior security engineer" > "expert"
 
 ---
 

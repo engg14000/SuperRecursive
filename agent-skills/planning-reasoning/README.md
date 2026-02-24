@@ -1,6 +1,6 @@
-# 🧩 Planning & Reasoning
+# ?? Planning & Reasoning
 
-> Advanced reasoning frameworks for AI agents — from step-by-step thinking to self-correcting loops.
+> Advanced reasoning frameworks for AI agents - from step-by-step thinking to self-correcting loops.
 
 ## Frameworks
 
@@ -16,11 +16,11 @@
 
 ```
 What kind of task?
-├── Clear, step-by-step problem → Chain-of-Thought
-├── Multiple valid solutions → Tree-of-Thought
-├── Investigation/research → ReAct
-├── Iterative improvement → Reflexion
-└── Pipeline/automation → Structured Output
++-- Clear, step-by-step problem ? Chain-of-Thought
++-- Multiple valid solutions ? Tree-of-Thought
++-- Investigation/research ? ReAct
++-- Iterative improvement ? Reflexion
++-- Pipeline/automation ? Structured Output
 ```
 
 ## Combining Frameworks

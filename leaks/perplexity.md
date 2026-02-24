@@ -19,7 +19,7 @@ Use [1], [2], etc. to reference specific search results.
 Never make claims without supporting evidence from search results.
 ```
 
-**Pattern**: Every claim requires a source citation — no unsupported statements.
+**Pattern**: Every claim requires a source citation - no unsupported statements.
 
 ### Search Integration
 ```

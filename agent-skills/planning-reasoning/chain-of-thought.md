@@ -49,7 +49,7 @@ A: Let's think step by step.
    Step 1: Total modules = 15, each needs 3 + 1 = 4 days
    Step 2: With 5 parallel tracks, we need 15/5 = 3 rounds
    Step 3: Each round = 4 days (3 coding + 1 testing)
-   Step 4: Total = 3 rounds × 4 days = 12 days
+   Step 4: Total = 3 rounds � 4 days = 12 days
    
    Therefore: The project will take 12 days.
 ```
@@ -61,9 +61,9 @@ Provide examples of step-by-step reasoning before the actual question.
 Generate multiple reasoning chains and pick the most common answer.
 
 ```
-Chain 1: ... → Answer: A
-Chain 2: ... → Answer: A  
-Chain 3: ... → Answer: B
+Chain 1: ... ? Answer: A
+Chain 2: ... ? Answer: A  
+Chain 3: ... ? Answer: B
 
 Consensus: Answer A (2/3 chains agree)
 ```
@@ -72,11 +72,11 @@ Consensus: Answer A (2/3 chains agree)
 
 | Task Type | CoT Improvement | Example |
 |-----------|:-:|---------|
-| Math problems | ⭐⭐⭐⭐⭐ | Multi-step calculations |
-| Code debugging | ⭐⭐⭐⭐ | Trace execution flow |
-| Logic puzzles | ⭐⭐⭐⭐⭐ | Constraint satisfaction |
-| Architecture | ⭐⭐⭐⭐ | Design trade-off analysis |
-| Simple lookups | ⭐ | "What color is the sky?" — CoT unnecessary |
+| Math problems | ????? | Multi-step calculations |
+| Code debugging | ???? | Trace execution flow |
+| Logic puzzles | ????? | Constraint satisfaction |
+| Architecture | ???? | Design trade-off analysis |
+| Simple lookups | ? | "What color is the sky?" - CoT unnecessary |
 
 ## Integration with Agent Skills
 

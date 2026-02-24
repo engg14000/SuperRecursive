@@ -52,10 +52,10 @@ and provide a detailed scorecard.
 - Does it add unique value beyond basic instructions? (5 pts)
 
 ## Scoring Scale
-- 90-100: Exceptional — production-ready, best-in-class
-- 75-89: Good — effective with minor improvements possible
-- 60-74: Adequate — works but has significant room for improvement
-- Below 60: Needs Rework — fundamental issues to address
+- 90-100: Exceptional - production-ready, best-in-class
+- 75-89: Good - effective with minor improvements possible
+- 60-74: Adequate - works but has significant room for improvement
+- Below 60: Needs Rework - fundamental issues to address
 
 ## Output Format
 

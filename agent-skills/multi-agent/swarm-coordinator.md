@@ -15,23 +15,23 @@ The Swarm Coordinator pattern enables a lead agent to orchestrate multiple speci
 ## Architecture
 
 ```
-                    ┌──────────────────┐
-                    │   COORDINATOR    │
-                    │   (Lead Agent)   │
-                    └────────┬─────────┘
-                             │
-              ┌──────────────┼──────────────┐
-              │              │              │
-    ┌─────────▼────┐  ┌─────▼──────┐  ┌───▼───────────┐
-    │  ARCHITECT   │  │  CODER     │  │  REVIEWER     │
-    │  (Design)    │  │  (Impl)    │  │  (Quality)    │
-    └──────────────┘  └────────────┘  └───────────────┘
+                    +------------------+
+                    �   COORDINATOR    �
+                    �   (Lead Agent)   �
+                    +------------------+
+                             �
+              +--------------+--------------+
+              �              �              �
+    +---------?----+  +-----?------+  +---?-----------+
+    �  ARCHITECT   �  �  CODER     �  �  REVIEWER     �
+    �  (Design)    �  �  (Impl)    �  �  (Quality)    �
+    +--------------+  +------------+  +---------------+
 ```
 
 ## Coordinator System Prompt
 
 ```
-You are the Swarm Coordinator — a lead AI agent responsible for orchestrating a team 
+You are the Swarm Coordinator - a lead AI agent responsible for orchestrating a team 
 of specialist agents to complete complex projects.
 
 ## Your Role
@@ -75,11 +75,11 @@ When agents disagree (e.g., Architect vs Coder on approach):
 ## Quality Gates
 
 Before presenting the final result:
-□ All agent outputs received and validated
-□ No conflicting implementations
-□ All dependencies resolved
-□ Reviewer agent has approved
-□ Final integration test passes
+? All agent outputs received and validated
+? No conflicting implementations
+? All dependencies resolved
+? Reviewer agent has approved
+? Final integration test passes
 ```
 
 ## Example: Building a Feature
@@ -91,7 +91,7 @@ Before presenting the final result:
 
 ```
 PHASE 1: Design
-─────────────────────────────────────────
+-----------------------------------------
 TASK_1: Design auth architecture
 AGENT: ARCHITECT
 INPUT: Current API structure, OAuth2 requirements
@@ -100,7 +100,7 @@ DEPENDS_ON: None
 PRIORITY: HIGH
 
 PHASE 2: Research + Implementation (Parallel)
-─────────────────────────────────────────
+-----------------------------------------
 TASK_2: Research OAuth2 best practices
 AGENT: RESEARCHER
 INPUT: Architecture from TASK_1
@@ -116,7 +116,7 @@ DEPENDS_ON: TASK_1, TASK_2
 PRIORITY: HIGH
 
 PHASE 3: Quality Assurance (Parallel)
-─────────────────────────────────────────
+-----------------------------------------
 TASK_4: Generate test cases
 AGENT: TESTER
 INPUT: Implementation from TASK_3
@@ -132,7 +132,7 @@ DEPENDS_ON: TASK_3
 PRIORITY: HIGH
 
 PHASE 4: Finalization
-─────────────────────────────────────────
+-----------------------------------------
 TASK_6: Apply review fixes
 AGENT: CODER
 INPUT: Findings from TASK_5
@@ -187,8 +187,8 @@ Agents communicate through structured messages:
 
 ## Anti-Patterns
 
-❌ **Micro-managing**: Don't decompose into tasks too small for specialists
-❌ **No quality gate**: Always have a review step before final output
-❌ **Sequential everything**: Identify parallelizable tasks and run them concurrently
-❌ **Ignoring conflicts**: When agents disagree, resolve explicitly, don't pick randomly
-❌ **Over-engineering**: Not every task needs 7 agents — use what's needed
+? **Micro-managing**: Don't decompose into tasks too small for specialists
+? **No quality gate**: Always have a review step before final output
+? **Sequential everything**: Identify parallelizable tasks and run them concurrently
+? **Ignoring conflicts**: When agents disagree, resolve explicitly, don't pick randomly
+? **Over-engineering**: Not every task needs 7 agents - use what's needed

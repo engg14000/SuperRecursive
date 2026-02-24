@@ -26,11 +26,11 @@ This is vague and will produce inconsistent results. Let's improve it.
 
 | Dimension | Score |
 |-----------|:---:|
-| Clarity | 2/10 — What data? What processing? |
-| Specificity | 1/10 — Almost no details |
-| Format | 1/10 — No output format specified |
-| Constraints | 0/10 — No rules |
-| Examples | 0/10 — No examples |
+| Clarity | 2/10 - What data? What processing? |
+| Specificity | 1/10 - Almost no details |
+| Format | 1/10 - No output format specified |
+| Constraints | 0/10 - No rules |
+| Examples | 0/10 - No examples |
 
 ### Improve
 
@@ -43,11 +43,11 @@ with column names, row count, and data types for each column.
 
 | Dimension | Score |
 |-----------|:---:|
-| Clarity | 6/10 — Much clearer |
-| Specificity | 5/10 — Some details still missing |
-| Format | 3/10 — "summary dictionary" is vague |
-| Constraints | 2/10 — No error handling mentioned |
-| Examples | 0/10 — Still no examples |
+| Clarity | 6/10 - Much clearer |
+| Specificity | 5/10 - Some details still missing |
+| Format | 3/10 - "summary dictionary" is vague |
+| Constraints | 2/10 - No error handling mentioned |
+| Examples | 0/10 - Still no examples |
 
 ### Improve
 
@@ -87,13 +87,13 @@ Include type hints and a docstring.
 
 | Dimension | Score |
 |-----------|:---:|
-| Clarity | 9/10 — Very clear |
-| Specificity | 9/10 — Detailed requirements |
-| Format | 9/10 — Exact output structure |
-| Constraints | 8/10 — Error handling specified |
-| Examples | 7/10 — Implicit example in output spec |
+| Clarity | 9/10 - Very clear |
+| Specificity | 9/10 - Detailed requirements |
+| Format | 9/10 - Exact output structure |
+| Constraints | 8/10 - Error handling specified |
+| Examples | 7/10 - Implicit example in output spec |
 
-**All scores ≥ 7** → Finalized! ✅
+**All scores = 7** ? Finalized! ?
 
 ## Result
 
@@ -102,7 +102,7 @@ Include type hints and a docstring.
 | Clarity | 2/10 | 9/10 | +350% |
 | Specificity | 1/10 | 9/10 | +800% |
 | Format | 1/10 | 9/10 | +800% |
-| Constraints | 0/10 | 8/10 | ∞ |
+| Constraints | 0/10 | 8/10 | 8 |
 | Average | 0.8 | 8.8 | **+1000%** |
 
 ## The Pattern
@@ -112,4 +112,4 @@ You can use this on ANY prompt:
 2. Find the lowest-scoring dimension
 3. Improve that specific dimension
 4. Re-score
-5. Repeat until all ≥ 7
+5. Repeat until all = 7

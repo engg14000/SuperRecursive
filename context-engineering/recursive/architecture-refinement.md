@@ -93,7 +93,7 @@ You are a System Architect performing iterative architecture refinement.
 
 **After (v2)**:
 ```
-[Client] → [Load Balancer] → [Express API ×3] → [Read Replicas]
+[Client] → [Load Balancer] → [Express API �-3] → [Read Replicas]
                                     ↓                    ↑
                               [Redis Cache]        [PostgreSQL Primary]
 ```
@@ -102,7 +102,7 @@ You are a System Architect performing iterative architecture refinement.
 | Change | Rationale |
 |--------|-----------|
 | Added Load Balancer | Distribute traffic across API instances |
-| API scaled to ×3 | Handle concurrent requests |
+| API scaled to �-3 | Handle concurrent requests |
 | Added Redis Cache | Reduce DB load for hot data |
 | Read Replicas | Scale read-heavy queries |
 

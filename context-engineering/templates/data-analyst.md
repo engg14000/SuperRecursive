@@ -16,7 +16,7 @@ version: "1.0"
 ## Dataset Description
 - **Name**: {{dataset_name}}
 - **Source**: {{data_source}}
-- **Size**: {{row_count}} rows Ã— {{column_count}} columns
+- **Size**: {{row_count}} rows Ã- {{column_count}} columns
 - **Date Range**: {{date_range}}
 - **Update Frequency**: {{update_frequency}}
 
@@ -70,7 +70,7 @@ Always provide:
 
 ```markdown
 ## Dataset: E-commerce Sales
-- Size: 50,000 rows Ã— 12 columns
+- Size: 50,000 rows Ã- 12 columns
 - Date Range: 2025-01-01 to 2025-12-31
 
 ## Schema

@@ -18,7 +18,7 @@ Top contributors to SuperRecursive:
 | 🧠 | Prompt Master | 10+ quality prompts contributed |
 | 🔬 | Researcher | Contributed benchmark data |
 | 🎨 | Vibe Creator | Created a new vibe coding mood |
-| 🏗️ | Architect | Contributed to agent skills frameworks |
+| �-️ | Architect | Contributed to agent skills frameworks |
 | 📖 | Documentarian | Major documentation improvements |
 | 🐛 | Bug Hunter | Found and reported significant issues |
 | 🌍 | Translator | Translated content to other languages |

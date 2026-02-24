@@ -137,7 +137,7 @@ def validate_output(data: dict, required_fields: list) -> tuple[bool, list]:
 
 | Tool | Best Approach |
 |------|--------------|
-| Claude | `response_format` not available — use schema in prompt + few-shot |
+| Claude | `response_format` not available - use schema in prompt + few-shot |
 | GPT-4 | Use `response_format: { type: "json_object" }` API parameter |
 | Gemini | Use `generation_config` with `response_mime_type: "application/json"` |
 | Local LLMs | Use constrained decoding (outlines, guidance libraries) |

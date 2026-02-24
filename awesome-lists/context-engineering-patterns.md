@@ -1,15 +1,15 @@
 # Context Engineering Patterns
 
-> A pattern catalog for structuring AI context — from simple to advanced.
+> A pattern catalog for structuring AI context - from simple to advanced.
 
 ## Pattern Hierarchy
 
 ```
-Level 1: Basic          → Simple role + task
-Level 2: Structured     → Role + guidelines + format  
-Level 3: Contextual     → + relevant documents/code
-Level 4: Engineered     → + attention management + memory
-Level 5: SuperRecursive → + self-improvement loops
+Level 1: Basic          ? Simple role + task
+Level 2: Structured     ? Role + guidelines + format  
+Level 3: Contextual     ? + relevant documents/code
+Level 4: Engineered     ? + attention management + memory
+Level 5: SuperRecursive ? + self-improvement loops
 ```
 
 ## Level 1: Basic Patterns
@@ -130,12 +130,12 @@ REMINDER: [Repeat the most important rule]
 Total context: 200K tokens
 
 Allocation:
-├── System prompt:     5K (2.5%)   — Role + rules
-├── Task description:  2K (1%)     — Current objective
-├── Critical context: 20K (10%)    — Most relevant code/docs
-├── Supporting docs:  50K (25%)    — Related reference material
-├── Examples:         10K (5%)     — Input/output pairs
-└── Response space:  113K (56.5%)  — Room for the AI to think
++-- System prompt:     5K (2.5%)   - Role + rules
++-- Task description:  2K (1%)     - Current objective
++-- Critical context: 20K (10%)    - Most relevant code/docs
++-- Supporting docs:  50K (25%)    - Related reference material
++-- Examples:         10K (5%)     - Input/output pairs
++-- Response space:  113K (56.5%)  - Room for the AI to think
 ```
 
 ---
@@ -148,9 +148,9 @@ Allocation:
 2. Critique your response on [dimensions]
 3. Score each dimension (1-10)
 4. If any score < 7, improve that dimension
-5. Repeat until all scores ≥ 7
+5. Repeat until all scores = 7
 ```
-→ See [Self-Critique Loop](../context-engineering/recursive/self-critique-loop.md)
+? See [Self-Critique Loop](../context-engineering/recursive/self-critique-loop.md)
 
 ### Quality Ratchet
 ```
@@ -160,7 +160,7 @@ After each output, verify quality has NOT decreased:
 - If score decreased, revert and try different approach
 - Quality can only go UP, never down
 ```
-→ See [Quality Ratchet](../context-engineering/recursive/quality-ratchet.md)
+? See [Quality Ratchet](../context-engineering/recursive/quality-ratchet.md)
 
 ### Prompt Evolution
 ```
@@ -170,7 +170,7 @@ After each output, verify quality has NOT decreased:
 4. Repeat for N generations
 5. Best prompt wins
 ```
-→ See [Prompt Evolution](../context-engineering/recursive/prompt-evolution.md)
+? See [Prompt Evolution](../context-engineering/recursive/prompt-evolution.md)
 
 ## Pattern Selection Guide
 

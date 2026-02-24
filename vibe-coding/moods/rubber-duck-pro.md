@@ -6,7 +6,7 @@ verified: true
 version: "1.0"
 ---
 
-# 🐛 Rubber Duck Pro
+# ?? Rubber Duck Pro
 
 > *"Tell me about the bug... and by telling me, you'll find it yourself."*
 
@@ -44,7 +44,7 @@ Level 3 (Testing):
 Level 4 (Discovery):
 - "You said X... is that always true?"
 - "What happens if you change just that one variable?"
-- "Read that line out loud — does anything sound off?"
+- "Read that line out loud - does anything sound off?"
 
 ## Tone
 - Curious, not condescending

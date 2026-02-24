@@ -10,20 +10,20 @@ version: "1.0"
 
 ## Overview
 
-The Quality Ratchet ensures that each recursive iteration produces measurably better output. Like a mechanical ratchet, quality can only go up — never back down.
+The Quality Ratchet ensures that each recursive iteration produces measurably better output. Like a mechanical ratchet, quality can only go up - never back down.
 
 ## The Ratchet Mechanism
 
 ```
 Quality
-  ▲
-  │            ┌─── Iteration 3: 9.2
-  │        ┌───┘
-  │    ┌───┘    ← Quality can only go UP
-  │────┘         Iteration 2: 8.1
-  │              Iteration 1: 6.5
-  │              Baseline: 4.0
-  └──────────────────────────────────► Iterations
+  ?
+  �            +--- Iteration 3: 9.2
+  �        +---+
+  �    +---+    ? Quality can only go UP
+  �----+         Iteration 2: 8.1
+  �              Iteration 1: 6.5
+  �              Baseline: 4.0
+  +----------------------------------? Iterations
 ```
 
 ## System Prompt
@@ -38,16 +38,16 @@ Track these metrics across iterations:
 
 | Metric | Weight | Iter 0 | Iter 1 | Iter 2 | Iter 3 |
 |--------|:------:|:------:|:------:|:------:|:------:|
-| Correctness | 30% | ? | ≥prev | ≥prev | ≥prev |
-| Completeness | 25% | ? | ≥prev | ≥prev | ≥prev |
-| Performance | 20% | ? | ≥prev | ≥prev | ≥prev |
-| Readability | 15% | ? | ≥prev | ≥prev | ≥prev |
-| Robustness | 10% | ? | ≥prev | ≥prev | ≥prev |
+| Correctness | 30% | ? | =prev | =prev | =prev |
+| Completeness | 25% | ? | =prev | =prev | =prev |
+| Performance | 20% | ? | =prev | =prev | =prev |
+| Readability | 15% | ? | =prev | =prev | =prev |
+| Robustness | 10% | ? | =prev | =prev | =prev |
 
 ## Ratchet Rules
 
 1. NEVER decrease any metric from the previous iteration
-2. Each iteration must INCREASE at least one metric by ≥ 0.5 points
+2. Each iteration must INCREASE at least one metric by = 0.5 points
 3. If you can't improve without decreasing another metric, STOP
 4. Maximum 4 iterations (diminishing returns beyond that)
 5. Log the specific change that caused each improvement
@@ -66,7 +66,7 @@ For each iteration:
 ## Convergence Criterion
 
 Stop when:
-- All metrics ≥ 8/10, OR
+- All metrics = 8/10, OR
 - No metric can be improved without decreasing another, OR
 - Maximum iterations reached
 ```
@@ -93,44 +93,44 @@ app.get('/users', (req, res) => {
 ### Iteration 1: Fix Robustness (lowest: 2)
 Added: error handling, input validation
 
-| Metric | Score | Δ |
+| Metric | Score | ? |
 |--------|:---:|:---:|
-| Correctness | 6 | +1 ✅ |
-| Completeness | 5 | +2 ✅ |
-| Performance | 4 | ±0 |
-| Readability | 6 | ±0 |
-| Robustness | 7 | +5 ✅ |
+| Correctness | 6 | +1 ? |
+| Completeness | 5 | +2 ? |
+| Performance | 4 | �0 |
+| Readability | 6 | �0 |
+| Robustness | 7 | +5 ? |
 | **Weighted** | **5.55** | **+1.60** |
 
 ### Iteration 2: Fix Performance (lowest remaining: 4)
 Added: pagination, query optimization, caching headers
 
-| Metric | Score | Δ |
+| Metric | Score | ? |
 |--------|:---:|:---:|
-| Correctness | 7 | +1 ✅ |
-| Completeness | 7 | +2 ✅ |
-| Performance | 8 | +4 ✅ |
-| Readability | 6 | ±0 |
-| Robustness | 7 | ±0 |
+| Correctness | 7 | +1 ? |
+| Completeness | 7 | +2 ? |
+| Performance | 8 | +4 ? |
+| Readability | 6 | �0 |
+| Robustness | 7 | �0 |
 | **Weighted** | **7.15** | **+1.60** |
 
 ### Iteration 3: Fix Readability (lowest remaining: 6)
 Added: JSDoc, clear variable names, extracted helper functions
 
-| Metric | Score | Δ |
+| Metric | Score | ? |
 |--------|:---:|:---:|
-| Correctness | 8 | +1 ✅ |
-| Completeness | 8 | +1 ✅ |
-| Performance | 8 | ±0 |
-| Readability | 9 | +3 ✅ |
-| Robustness | 8 | +1 ✅ |
+| Correctness | 8 | +1 ? |
+| Completeness | 8 | +1 ? |
+| Performance | 8 | �0 |
+| Readability | 9 | +3 ? |
+| Robustness | 8 | +1 ? |
 | **Weighted** | **8.25** | **+1.10** |
 
-**All metrics ≥ 8** → Ratchet complete! ✅
+**All metrics = 8** ? Ratchet complete! ?
 
 ## Anti-Patterns
 
-❌ **Score inflation**: Don't increase scores without real improvements
-❌ **Metric gaming**: Don't optimize one metric at the expense of others
-❌ **Over-iteration**: Stop at 3-4 iterations; beyond that, returns diminish sharply
-❌ **Subjective scoring**: Use specific, observable criteria for each score
+? **Score inflation**: Don't increase scores without real improvements
+? **Metric gaming**: Don't optimize one metric at the expense of others
+? **Over-iteration**: Stop at 3-4 iterations; beyond that, returns diminish sharply
+? **Subjective scoring**: Use specific, observable criteria for each score

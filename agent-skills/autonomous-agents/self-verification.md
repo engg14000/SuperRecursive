@@ -26,40 +26,40 @@ After generating output, execute these checks IN ORDER:
 ### 1. Completeness Check
 - Does the output address ALL parts of the user's request?
 - Are there any missing edge cases or requirements?
-- Score: Complete (✅) / Partial (⚠️) / Incomplete (❌)
+- Score: Complete (?) / Partial (??) / Incomplete (?)
 
 ### 2. Correctness Check  
 - Is the logic sound?
 - For code: Will it compile/run without errors?
 - For analysis: Are conclusions supported by evidence?
-- Score: Correct (✅) / Likely correct (⚠️) / Contains errors (❌)
+- Score: Correct (?) / Likely correct (??) / Contains errors (?)
 
 ### 3. Quality Check
 - Is the output well-structured and readable?
 - Does it follow best practices for the domain?
 - Would an expert approve of this approach?
-- Score: High quality (✅) / Acceptable (⚠️) / Low quality (❌)
+- Score: High quality (?) / Acceptable (??) / Low quality (?)
 
 ### 4. Safety Check
 - Does the output contain any harmful, biased, or sensitive content?
 - For code: Are there security vulnerabilities?
-- Score: Safe (✅) / Review needed (⚠️) / Unsafe (❌)
+- Score: Safe (?) / Review needed (??) / Unsafe (?)
 
 ## Decision Matrix
 
 | Check Results | Action |
 |--------------|--------|
-| All ✅ | Present output with confidence |
-| Any ⚠️ | Present with caveats noted |
-| Any ❌ | Revise before presenting |
-| Multiple ❌ | Start over with refined approach |
+| All ? | Present output with confidence |
+| Any ?? | Present with caveats noted |
+| Any ? | Revise before presenting |
+| Multiple ? | Start over with refined approach |
 
 ## Output Format
 
 Always append a verification summary:
 
 ---
-**Self-Verification**: ✅ Completeness | ✅ Correctness | ✅ Quality | ✅ Safety
+**Self-Verification**: ? Completeness | ? Correctness | ? Quality | ? Safety
 **Confidence**: High (95%)
 **Caveats**: None identified
 ---
@@ -99,12 +99,12 @@ def validate_email(email: str) -> bool:
 ```
 
 **Self-Verification Summary:**
-- ✅ **Completeness**: Handles basic validation, type checking, edge cases
-- ⚠️ **Correctness**: Pattern covers common emails but not full RFC 5322 spec. Noted in docstring.
-- ✅ **Quality**: Type hints, docstring, examples, clean code
-- ✅ **Safety**: No security issues, no external calls
+- ? **Completeness**: Handles basic validation, type checking, edge cases
+- ?? **Correctness**: Pattern covers common emails but not full RFC 5322 spec. Noted in docstring.
+- ? **Quality**: Type hints, docstring, examples, clean code
+- ? **Safety**: No security issues, no external calls
 
-**Confidence**: 85% — The regex covers 99% of real-world emails but the full RFC spec is more complex. Adequate for most use cases.
+**Confidence**: 85% - The regex covers 99% of real-world emails but the full RFC spec is more complex. Adequate for most use cases.
 
 ## Integration with Recursive Chains
 
@@ -114,7 +114,7 @@ Self-verification naturally feeds into recursive improvement:
 1. Generate output
 2. Self-verify (identify weaknesses)
 3. If weaknesses found:
-   a. Target the specific ⚠️ or ❌ areas
+   a. Target the specific ?? or ? areas
    b. Regenerate those parts only
    c. Re-verify
 4. Repeat until all checks pass or max iterations (3) reached
@@ -124,7 +124,7 @@ Self-verification naturally feeds into recursive improvement:
 ## Verification Rubrics by Domain
 
 ### Code
-| Criterion | ✅ Pass | ❌ Fail |
+| Criterion | ? Pass | ? Fail |
 |-----------|---------|---------|
 | Syntax | Compiles/parses without errors | Syntax errors present |
 | Logic | Produces correct output for test cases | Wrong output |
@@ -133,7 +133,7 @@ Self-verification naturally feeds into recursive improvement:
 | Security | No injection, no secrets | Vulnerabilities present |
 
 ### Analysis
-| Criterion | ✅ Pass | ❌ Fail |
+| Criterion | ? Pass | ? Fail |
 |-----------|---------|---------|
 | Evidence | Claims backed by data | Unsupported assertions |
 | Logic | Arguments are sound | Logical fallacies |
@@ -141,7 +141,7 @@ Self-verification naturally feeds into recursive improvement:
 | Clarity | Clear, structured, readable | Confusing or vague |
 
 ### Writing
-| Criterion | ✅ Pass | ❌ Fail |
+| Criterion | ? Pass | ? Fail |
 |-----------|---------|---------|
 | Accuracy | Facts are correct | Misinformation |
 | Tone | Matches requested style | Wrong tone |

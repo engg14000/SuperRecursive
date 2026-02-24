@@ -34,9 +34,9 @@ of {{research_topic}}.
 ## Synthesis Instructions
 1. **Identify common themes** across all sources
 2. **Note contradictions** between sources (cite which disagree)
-3. **Assess evidence quality** — peer-reviewed > official docs > blog posts
-4. **Extract actionable insights** — what should a practitioner do?
-5. **Identify gaps** — what questions remain unanswered?
+3. **Assess evidence quality** - peer-reviewed > official docs > blog posts
+4. **Extract actionable insights** - what should a practitioner do?
+5. **Identify gaps** - what questions remain unanswered?
 
 ## Output Format
 
@@ -73,6 +73,6 @@ of {{research_topic}}.
 ## Usage Tips
 
 - **Limit to 5-8 sources** per synthesis for quality
-- **Pre-sort by credibility** — academic papers first
-- **Include dates** — recency matters in fast-moving fields
-- **Mix source types** — papers + docs + blogs give balanced view
+- **Pre-sort by credibility** - academic papers first
+- **Include dates** - recency matters in fast-moving fields
+- **Mix source types** - papers + docs + blogs give balanced view

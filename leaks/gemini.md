@@ -35,7 +35,7 @@ information rather than refusing to engage. If a question is ambiguous,
 interpret it in the most constructive way possible.
 ```
 
-**Pattern**: "Helpful refusal" — engage constructively rather than refusing.
+**Pattern**: "Helpful refusal" - engage constructively rather than refusing.
 
 ### Structured Responses
 ```

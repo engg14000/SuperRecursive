@@ -1,15 +1,15 @@
-# 🎯 Context Engineering
+# ?? Context Engineering
 
 > The art and science of feeding AI models the right information at the right time. Templates, strategies, and recursive frameworks for maximizing AI output quality.
 
-## 📋 Contents
+## ?? Contents
 
-- [Templates](templates/) — RAG, long-context, structured context formats
-- [Recursive](recursive/) — Self-improving prompt chains (SuperRecursive signature)
-- [Meta-Prompting](meta-prompting/) — Prompts that generate and optimize prompts
-- [Benchmarks](benchmarks/) — Evaluation frameworks for context quality
+- [Templates](templates/) - RAG, long-context, structured context formats
+- [Recursive](recursive/) - Self-improving prompt chains (SuperRecursive signature)
+- [Meta-Prompting](meta-prompting/) - Prompts that generate and optimize prompts
+- [Benchmarks](benchmarks/) - Evaluation frameworks for context quality
 
-## 🧠 What is Context Engineering?
+## ?? What is Context Engineering?
 
 Context engineering is the discipline of **crafting the information environment** around an AI model to maximize output quality. It goes beyond prompt engineering by considering:
 
@@ -19,7 +19,7 @@ Context engineering is the discipline of **crafting the information environment*
 4. **When** to update it (freshness)
 5. **How much** to include (density vs. noise)
 
-## 🔑 Core Principles
+## ?? Core Principles
 
 | Principle | Description |
 |-----------|-------------|
@@ -30,8 +30,8 @@ Context engineering is the discipline of **crafting the information environment*
 | **Freshness** | Update dynamic context, keep static context stable |
 | **Consistency** | Use the same format across similar contexts |
 
-## 🔗 Related Sections
+## ?? Related Sections
 
-- [Agent Skills](../agent-skills/) — Memory management directly supports context engineering
-- [Vibe Coding](../vibe-coding/) — Mood-based context adaptation
-- [System Prompts](../) — Tool-specific context optimization
+- [Agent Skills](../agent-skills/) - Memory management directly supports context engineering
+- [Vibe Coding](../vibe-coding/) - Mood-based context adaptation
+- [System Prompts](../) - Tool-specific context optimization

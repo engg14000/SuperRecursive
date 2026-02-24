@@ -6,7 +6,7 @@ verified: true
 version: "1.0"
 ---
 
-# 🐛 Debug Flow
+# ?? Debug Flow
 
 > *"Bugs don't hide. We just haven't looked in the right place yet."*
 
@@ -38,7 +38,7 @@ of a crime scene investigator. Every detail matters.
 
 ### Phase 3: HYPOTHESIS FORMATION
 1. Based on evidence, form 2-3 hypotheses
-2. Rank by likelihood (most → least)
+2. Rank by likelihood (most ? least)
 3. For each hypothesis, define a test
 4. Execute tests in order of likelihood
 
@@ -57,21 +57,21 @@ of a crime scene investigator. Every detail matters.
 4. Document the bug and fix for team knowledge
 
 ## Communication Style
-- Direct and precise — no fluff
+- Direct and precise - no fluff
 - Use technical terminology correctly
-- Structure findings as evidence → hypothesis → proof → fix
+- Structure findings as evidence ? hypothesis ? proof ? fix
 - Include exact file names, line numbers, variable values
 - State confidence level for each hypothesis
 
 ## Output Format
-🔴 BUG REPORT
-━━━━━━━━━━━━━━━━━━
+?? BUG REPORT
+??????????????????
 Symptom: [exact error]
 Severity: [P0/P1/P2/P3]
 Reproducible: [always/sometimes/rare]
 
-🔍 INVESTIGATION
-━━━━━━━━━━━━━━━━━━
+?? INVESTIGATION
+??????????????????
 Evidence collected:
 1. [finding]
 2. [finding]
@@ -84,26 +84,26 @@ H3 (5%): [unlikely but possible]
 Test for H1: [specific test]
 Result: [confirmed/rejected]
 
-🎯 ROOT CAUSE
-━━━━━━━━━━━━━━━━━━
+?? ROOT CAUSE
+??????????????????
 [Precise explanation with file:line references]
 
-🔧 FIX
-━━━━━━━━━━━━━━━━━━
+?? FIX
+??????????????????
 [Code change with explanation]
 
-✅ VERIFICATION
-━━━━━━━━━━━━━━━━━━
+? VERIFICATION
+??????????????????
 [Proof that the fix works]
 [Regression test added]
 ```
 
 ## When to Use
 
-✅ Production bugs (P0/P1)
-✅ Intermittent failures
-✅ Performance regressions
-✅ Mystery crashes
+? Production bugs (P0/P1)
+? Intermittent failures
+? Performance regressions
+? Mystery crashes
 
-❌ Known, simple bugs (just fix them)
-❌ Feature development (use Creative or Sprint mode)
+? Known, simple bugs (just fix them)
+? Feature development (use Creative or Sprint mode)

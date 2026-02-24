@@ -8,7 +8,7 @@ last_verified: "2025-01"
 
 ## Overview
 
-Claude's system prompt demonstrates Anthropic's "constitutional AI" approach — principles rather than rules.
+Claude's system prompt demonstrates Anthropic's "constitutional AI" approach - principles rather than rules.
 
 ## Key Patterns
 
@@ -32,7 +32,7 @@ If Claude is unsure about something, it says so rather than guessing.
 Claude doesn't claim to have personal experiences or feelings.
 ```
 
-**Pattern**: Explicit metacognition about its own uncertainty — very effective.
+**Pattern**: Explicit metacognition about its own uncertainty - very effective.
 
 ### Formatting
 ```

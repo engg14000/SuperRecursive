@@ -1,6 +1,6 @@
-# 🧠 Memory Management
+# ?? Memory Management
 
-> Strategies for managing AI context efficiently — sliding windows, hierarchical memory, retrieval-augmented memory, and compression techniques.
+> Strategies for managing AI context efficiently - sliding windows, hierarchical memory, retrieval-augmented memory, and compression techniques.
 
 ## Frameworks
 
@@ -15,10 +15,10 @@
 
 ```
 Is the task within a single session?
-├── YES: Use Sliding Window
-└── NO: Is there a large knowledge base?
-    ├── YES: Use Retrieval-Augmented Memory
-    └── NO: Use Hierarchical Memory
++-- YES: Use Sliding Window
++-- NO: Is there a large knowledge base?
+    +-- YES: Use Retrieval-Augmented Memory
+    +-- NO: Use Hierarchical Memory
 
 Always: Apply Compression techniques within any strategy.
 ```

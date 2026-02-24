@@ -1,4 +1,4 @@
-# 🚀 Starter Kit
+# ?? Starter Kit
 
 > Ready-to-use configuration files for popular AI tools. Clone, customize, and start coding.
 
@@ -7,20 +7,20 @@
 Pick your tool, copy the config, and start coding with SuperRecursive prompts.
 
 ### [Cursor Setup](cursor-setup/)
-- `.cursorrules` — Enhanced with SuperRecursive patterns
-- `.cursor/settings.json` — Optimized settings
+- `.cursorrules` - Enhanced with SuperRecursive patterns
+- `.cursor/settings.json` - Optimized settings
 
 ### [Claude Code Setup](claude-code-setup/)
-- `CLAUDE.md` — Project context with agent skills
+- `CLAUDE.md` - Project context with agent skills
 - Root configuration for Claude Code
 
 ### [GitHub Copilot Setup](copilot-setup/)
-- `.github/copilot-instructions.md` — Custom Copilot instructions
+- `.github/copilot-instructions.md` - Custom Copilot instructions
 
 ### [Universal Setup](universal/)
-- `.ai/context.md` — Works with any AI tool
-- `.ai/conventions.md` — Project conventions
-- `.ai/architecture.md` — Architecture overview
+- `.ai/context.md` - Works with any AI tool
+- `.ai/conventions.md` - Project conventions
+- `.ai/architecture.md` - Architecture overview
 
 ## 30-Second Setup
 
@@ -43,9 +43,9 @@ cp copilot-setup/.github/copilot-instructions.md /path/to/your/project/.github/
 ## What's Included
 
 Each setup includes:
-- ✅ Role definition optimized for the tool
-- ✅ Code quality guidelines
-- ✅ Error handling patterns
-- ✅ Testing requirements
-- ✅ Self-verification checklist
-- ✅ Customization instructions
+- ? Role definition optimized for the tool
+- ? Code quality guidelines
+- ? Error handling patterns
+- ? Testing requirements
+- ? Self-verification checklist
+- ? Customization instructions

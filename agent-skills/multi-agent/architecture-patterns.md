@@ -43,11 +43,11 @@ report your output to the manager. Ask the manager if you need clarification."
 
 ```
     ┌────┐   ┌────┐
-    │ A1 │◄──│ A2 │
+    │ A1 │�-�──│ A2 │
     └──┬─┘   └─┬──┘
        │       │
     ┌──▼─┐   ┌▼──┐
-    │ A3 │◄──│ A4 │
+    │ A3 │�-�──│ A4 │
     └────┘   └───┘
 ```
 

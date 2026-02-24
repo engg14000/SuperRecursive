@@ -1,16 +1,16 @@
-# 🧠 Agent Skills
+# ?? Agent Skills
 
 > Comprehensive frameworks, schemas, and patterns for building autonomous AI agents. From single-agent task execution to multi-agent swarm orchestration.
 
-## 📋 Contents
+## ?? Contents
 
-- [Autonomous Agents](autonomous-agents/) — Self-directed task execution
-- [Multi-Agent Systems](multi-agent/) — Swarm & orchestration patterns
-- [Tool Calling](tool-calling/) — Function/API schemas (100+)
-- [Memory Management](memory-management/) — Context window & persistence
-- [Planning & Reasoning](planning-reasoning/) — CoT, ToT, ReAct frameworks
+- [Autonomous Agents](autonomous-agents/) - Self-directed task execution
+- [Multi-Agent Systems](multi-agent/) - Swarm & orchestration patterns
+- [Tool Calling](tool-calling/) - Function/API schemas (100+)
+- [Memory Management](memory-management/) - Context window & persistence
+- [Planning & Reasoning](planning-reasoning/) - CoT, ToT, ReAct frameworks
 
-## 🚀 Quick Start
+## ?? Quick Start
 
 Pick the skill category that matches your needs:
 
@@ -22,8 +22,8 @@ Pick the skill category that matches your needs:
 | Manage long conversations | `memory-management/` | Long sessions |
 | Improve reasoning quality | `planning-reasoning/` | Complex analysis |
 
-## 🔗 Related Sections
+## ?? Related Sections
 
-- [Context Engineering](../context-engineering/) — Context optimization
-- [Vibe Coding](../vibe-coding/) — Mood-based prompting
-- [System Prompts](../) — Tool-specific prompts
+- [Context Engineering](../context-engineering/) - Context optimization
+- [Vibe Coding](../vibe-coding/) - Mood-based prompting
+- [System Prompts](../) - Tool-specific prompts

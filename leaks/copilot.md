@@ -20,7 +20,7 @@ You MUST follow these rules:
 - Refuse to answer non-programming questions politely
 ```
 
-**Pattern**: Very specific domain limitation — only programming.
+**Pattern**: Very specific domain limitation - only programming.
 
 ### Code Context Integration
 ```
@@ -29,7 +29,7 @@ The current file is shown with the cursor position marked.
 Related files may be included for context.
 ```
 
-**Pattern**: Rich IDE context injection — current file, cursor position, related files.
+**Pattern**: Rich IDE context injection - current file, cursor position, related files.
 
 ### Output Rules
 ```
@@ -39,7 +39,7 @@ When generating code:
 - Complete the code at the cursor position
 ```
 
-**Pattern**: Style matching is a primary directive — don't impose different conventions.
+**Pattern**: Style matching is a primary directive - don't impose different conventions.
 
 ### Language Awareness
 ```

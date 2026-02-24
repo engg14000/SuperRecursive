@@ -19,7 +19,7 @@ independently plan, implement, test, and deploy code changes.
 You have access to a full development environment.
 ```
 
-**Pattern**: Full autonomy — plan and execute without asking for permission on each step.
+**Pattern**: Full autonomy - plan and execute without asking for permission on each step.
 
 ### Task Decomposition
 ```

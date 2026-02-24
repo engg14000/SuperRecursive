@@ -1,5 +1,5 @@
 ---
-description: "Core recursive pattern: Output → Critique → Improve → Repeat"
+description: "Core recursive pattern: Output ? Critique ? Improve ? Repeat"
 author: "SuperRecursive"
 tags: ["recursive", "self-improvement", "self-critique", "core"]
 verified: true
@@ -15,30 +15,30 @@ The Self-Critique Loop is SuperRecursive's foundational pattern. It transforms a
 ## The Loop
 
 ```
-    ┌──────────┐
-    │ GENERATE │ ← Initial attempt
-    └────┬─────┘
-         │
-    ┌────▼─────┐
-    │ CRITIQUE │ ← Identify weaknesses
-    └────┬─────┘
-         │
-    ┌────▼─────┐
-    │ IMPROVE  │ ← Fix identified issues
-    └────┬─────┘
-         │
-    ┌────▼─────┐
-    │ EVALUATE │ ← Is it good enough?
-    └────┬─────┘
-         │
-    ┌────▼─────┐
-    │  PASS?   │
-    └──┬───┬───┘
-     YES   NO ──→ Back to CRITIQUE
-       │
-    ┌──▼───────┐
-    │ FINALIZE │
-    └──────────┘
+    +----------+
+    � GENERATE � ? Initial attempt
+    +----------+
+         �
+    +----?-----+
+    � CRITIQUE � ? Identify weaknesses
+    +----------+
+         �
+    +----?-----+
+    � IMPROVE  � ? Fix identified issues
+    +----------+
+         �
+    +----?-----+
+    � EVALUATE � ? Is it good enough?
+    +----------+
+         �
+    +----?-----+
+    �  PASS?   �
+    +----------+
+     YES   NO --? Back to CRITIQUE
+       �
+    +--?-------+
+    � FINALIZE �
+    +----------+
 ```
 
 ## System Prompt
@@ -61,17 +61,17 @@ Put on your "critical reviewer" hat. Score your output on these dimensions:
 | Elegance | ? | Is this the best approach (not just a working one)? |
 | Edge Cases | ? | Are corner cases handled? |
 
-Rule: If ANY dimension scores ≤ 6, improvement is mandatory.
+Rule: If ANY dimension scores = 6, improvement is mandatory.
 
 ## STEP 3: IMPROVE
-For each dimension scoring ≤ 6:
+For each dimension scoring = 6:
 1. State exactly what's wrong
 2. Propose a specific fix
 3. Apply the fix
 4. Move to next issue
 
 ## STEP 4: EVALUATE
-Re-score the improved output. If all dimensions ≥ 7, finalize.
+Re-score the improved output. If all dimensions = 7, finalize.
 If not, repeat Steps 2-4 (max 3 iterations).
 
 ## STEP 5: FINALIZE
@@ -88,7 +88,7 @@ Present the polished output with a brief note on improvements made.
 [improved output]
 
 ### Final Evaluation
-[all scores ≥ 7 confirmation]
+[all scores = 7 confirmation]
 ```
 
 ## Example: Writing a Function
@@ -177,7 +177,7 @@ def parse_config(
 | Elegance | 8 | Clean API with optional params |
 | Edge Cases | 9 | Missing file, bad JSON, wrong type, missing keys |
 
-**All scores ≥ 7** ✅ — Output finalized.
+**All scores = 7** ? - Output finalized.
 
 ## Integration
 

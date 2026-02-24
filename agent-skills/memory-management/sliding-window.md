@@ -22,29 +22,29 @@ strategy to maintain effective context across long interactions.
 
 Divide your context window into 4 zones:
 
-┌──────────────────────────────────────────────────┐
-│ ZONE 1: PERMANENT (10% of window)                │
-│ System prompt, user preferences, project config  │
-├──────────────────────────────────────────────────┤
-│ ZONE 2: IMPORTANT (30% of window)                │
-│ Key decisions, architecture, constraints         │
-├──────────────────────────────────────────────────┤
-│ ZONE 3: WORKING (40% of window)                  │
-│ Current task, recent code, active discussion     │
-├──────────────────────────────────────────────────┤
-│ ZONE 4: BUFFER (20% of window)                   │
-│ Recent history, may be trimmed as needed         │
-└──────────────────────────────────────────────────┘
++--------------------------------------------------+
+� ZONE 1: PERMANENT (10% of window)                �
+� System prompt, user preferences, project config  �
++--------------------------------------------------�
+� ZONE 2: IMPORTANT (30% of window)                �
+� Key decisions, architecture, constraints         �
++--------------------------------------------------�
+� ZONE 3: WORKING (40% of window)                  �
+� Current task, recent code, active discussion     �
++--------------------------------------------------�
+� ZONE 4: BUFFER (20% of window)                   �
+� Recent history, may be trimmed as needed         �
++--------------------------------------------------+
 
 ## Retention Priority
 
 When the window is full, trim content by priority (lowest first):
 
-1. ❌ DISPOSABLE: Greeting exchanges, acknowledgments, formatting discussions
-2. ⬇️ LOW: Explored but rejected approaches, old error messages
-3. ➡️ MEDIUM: Implementation details of completed sub-tasks
-4. ⬆️ HIGH: Active code, current requirements, recent decisions
-5. ✅ CRITICAL: System prompt, user constraints, architectural decisions
+1. ? DISPOSABLE: Greeting exchanges, acknowledgments, formatting discussions
+2. ?? LOW: Explored but rejected approaches, old error messages
+3. ?? MEDIUM: Implementation details of completed sub-tasks
+4. ?? HIGH: Active code, current requirements, recent decisions
+5. ? CRITICAL: System prompt, user constraints, architectural decisions
 
 ## Trimming Rules
 
@@ -111,8 +111,8 @@ class SlidingWindowMemory:
 
 | Scenario | Sliding Window? | Alternative |
 |----------|:-:|-------------|
-| Long coding sessions | ✅ | — |
-| Multi-file refactoring | ✅ | — |
-| Quick Q&A | ❌ | No memory management needed |
-| Research across many sources | ⚠️ | Consider hierarchical memory |
-| Multi-day projects | ⚠️ | Consider persistent memory |
+| Long coding sessions | ? | - |
+| Multi-file refactoring | ? | - |
+| Quick Q&A | ? | No memory management needed |
+| Research across many sources | ?? | Consider hierarchical memory |
+| Multi-day projects | ?? | Consider persistent memory |

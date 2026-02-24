@@ -40,7 +40,7 @@ Distribute tasks evenly across available agents.
 ```
 LOAD BALANCING ALGORITHM:
 1. Maintain a task queue
-2. Track each agent's current load (active tasks Ã— estimated time)
+2. Track each agent's current load (active tasks Ã- estimated time)
 3. Assign new tasks to the agent with lowest current load
 4. Re-balance if any agent's load exceeds 2x the average
 ```

@@ -38,9 +38,9 @@ For each step, provide:
 
 ## Rules
 
-1. Each step must be ATOMIC — completable without substeps
-2. Each step must be VERIFIABLE — has a clear pass/fail check
-3. Each step must be IDEMPOTENT — safe to retry
+1. Each step must be ATOMIC - completable without substeps
+2. Each step must be VERIFIABLE - has a clear pass/fail check
+3. Each step must be IDEMPOTENT - safe to retry
 4. Steps must handle failure gracefully
 5. Total step count should be minimized without sacrificing clarity
 6. Always include a final verification step that checks overall success
@@ -102,8 +102,8 @@ This framework works with any AI tool. Recommended pairings:
 
 ## Anti-Patterns
 
-❌ **Too vague**: "Set up the backend" — What files? What framework?
-❌ **Too large**: "Build the entire frontend" — Break into components
-❌ **No verification**: "Write the code" — How do we know it works?
-❌ **Missing rollback**: "Deploy to production" — What if it fails?
-❌ **Wrong ordering**: Testing before implementation exists
+? **Too vague**: "Set up the backend" - What files? What framework?
+? **Too large**: "Build the entire frontend" - Break into components
+? **No verification**: "Write the code" - How do we know it works?
+? **Missing rollback**: "Deploy to production" - What if it fails?
+? **Wrong ordering**: Testing before implementation exists

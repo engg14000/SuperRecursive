@@ -15,9 +15,9 @@ Reflexion enables agents to learn from their failures by explicitly reflecting o
 ## The Reflexion Loop
 
 ```
-Attempt → Evaluate → Reflect → Improve → Re-Attempt
-   ↑                                         │
-   └─────────────────────────────────────────┘
+Attempt ? Evaluate ? Reflect ? Improve ? Re-Attempt
+   ?                                         �
+   +-----------------------------------------+
    (until success or max iterations)
 ```
 
@@ -51,7 +51,7 @@ Next time I should [specific improvement]. The key insight is [lesson]."
 ### Improve Phase
 - Incorporate the reflection into a revised plan
 - Address each identified shortcoming specifically
-- Do NOT repeat the same approach with minor tweaks —
+- Do NOT repeat the same approach with minor tweaks -
   make a meaningful strategic change
 
 ### Re-Attempt Phase
@@ -98,12 +98,12 @@ def find_optimal_route(graph, start, end):
 ```
 
 **Evaluation**: 4/10
-- ✅ Finds a path
-- ❌ Doesn't find the shortest WEIGHTED path (BFS only works for unweighted)
-- ❌ No edge weight consideration
-- ❌ Poor performance (using list as queue)
+- ? Finds a path
+- ? Doesn't find the shortest WEIGHTED path (BFS only works for unweighted)
+- ? No edge weight consideration
+- ? Poor performance (using list as queue)
 
-**Reflection**: "I used BFS which only finds shortest path in unweighted graphs. The problem says 'optimal route' which implies weighted edges. I should use Dijkstra's algorithm. Also, using list.pop(0) is O(n) — should use collections.deque or heapq."
+**Reflection**: "I used BFS which only finds shortest path in unweighted graphs. The problem says 'optimal route' which implies weighted edges. I should use Dijkstra's algorithm. Also, using list.pop(0) is O(n) - should use collections.deque or heapq."
 
 ### Attempt 2
 ```python
@@ -139,11 +139,11 @@ def find_optimal_route(graph, start, end):
 ```
 
 **Evaluation**: 9/10
-- ✅ Correctly uses Dijkstra's for weighted graphs
-- ✅ Returns both path and total distance
-- ✅ Uses heap for O(E log V) performance
-- ✅ Handles unreachable destinations
-- ⚠️ Could add type hints and docstring
+- ? Correctly uses Dijkstra's for weighted graphs
+- ? Returns both path and total distance
+- ? Uses heap for O(E log V) performance
+- ? Handles unreachable destinations
+- ?? Could add type hints and docstring
 
 **Reflection**: "Much better. The key insight was recognizing 'optimal' implies weighted shortest path. For the final polish, I should add type hints and a docstring."
 
@@ -171,11 +171,11 @@ def find_optimal_route(
     # ... (same implementation with types)
 ```
 
-**Evaluation**: 10/10 ✅
+**Evaluation**: 10/10 ?
 
 ## Key Principles
 
 1. **Reflections must be specific**: "I failed" is useless. "I used BFS instead of Dijkstra because I assumed unweighted edges" is actionable.
-2. **Each attempt must be meaningfully different**: Don't just tweak — strategically improve.
+2. **Each attempt must be meaningfully different**: Don't just tweak - strategically improve.
 3. **Cap iterations**: Maximum 3 attempts. If still failing, escalate.
 4. **Learn forward**: Reflections from one task can improve performance on similar future tasks.

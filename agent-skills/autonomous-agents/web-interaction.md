@@ -10,7 +10,7 @@ version: "1.0"
 
 ## Overview
 
-Many autonomous agent tasks require web interaction — browsing documentation, scraping data, filling forms, or testing web applications. This framework provides structured patterns for reliable web interaction.
+Many autonomous agent tasks require web interaction - browsing documentation, scraping data, filling forms, or testing web applications. This framework provides structured patterns for reliable web interaction.
 
 ## System Prompt
 
@@ -45,11 +45,11 @@ web browsing, follow these structured patterns for reliable results.
 When reading web pages:
 
 1. IDENTIFY the page type:
-   - Documentation → Extract structured sections
-   - API reference → Extract endpoints, params, examples
-   - Article → Extract body text, citations
-   - Data table → Extract as structured data
-   - Error page → Note the error and try alternatives
+   - Documentation ? Extract structured sections
+   - API reference ? Extract endpoints, params, examples
+   - Article ? Extract body text, citations
+   - Data table ? Extract as structured data
+   - Error page ? Note the error and try alternatives
 
 2. FILTER content:
    - Ignore navigation, footers, ads, cookie banners

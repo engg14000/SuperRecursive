@@ -10,7 +10,7 @@ version: "1.0"
 
 ## Scenario
 
-You want an AI that can autonomously write code, test it, and fix issues — a personal coding agent. We'll set one up using SuperRecursive's frameworks.
+You want an AI that can autonomously write code, test it, and fix issues - a personal coding agent. We'll set one up using SuperRecursive's frameworks.
 
 ## Prerequisites
 
@@ -122,10 +122,10 @@ Watch your agent:
 ## Result
 
 You now have a basic coding agent that:
-- ✅ Plans before coding
-- ✅ Tests its own code
-- ✅ Fixes its own bugs
-- ✅ Reports progress
+- ? Plans before coding
+- ? Tests its own code
+- ? Fixes its own bugs
+- ? Reports progress
 
 ## Next Steps
 

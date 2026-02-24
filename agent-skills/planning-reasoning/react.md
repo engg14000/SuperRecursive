@@ -15,7 +15,7 @@ ReAct interleaves thinking (reasoning) with doing (acting). Instead of planning 
 ## The ReAct Loop
 
 ```
-Thought → Action → Observation → Thought → Action → Observation → ... → Answer
+Thought ? Action ? Observation ? Thought ? Action ? Observation ? ... ? Answer
 ```
 
 ## System Prompt
@@ -39,9 +39,9 @@ Final Thought: [Summary of findings]
 Answer: [Response to the user]
 
 ## Rules
-1. Always THINK before you ACT — never act without reasoning
-2. Always OBSERVE after you ACT — never skip reading the result
-3. Adjust your plan based on observations — don't follow a rigid script
+1. Always THINK before you ACT - never act without reasoning
+2. Always OBSERVE after you ACT - never skip reading the result
+3. Adjust your plan based on observations - don't follow a rigid script
 4. If an observation is unexpected, reason about WHY before continuing
 5. Limit to 10 thought-action cycles. If unresolved, summarize and ask for help.
 ```
@@ -68,7 +68,7 @@ Action 2: ls prisma/migrations/ | tail -5
 Observation 2: The most recent migration is from last week. No new migration 
                for `lastLoginAt`.
 
-Thought 3: Confirmed — the code writes to `lastLoginAt` but the column doesn't 
+Thought 3: Confirmed - the code writes to `lastLoginAt` but the column doesn't 
            exist in the database. I need to create a migration.
 
 Action 3: npx prisma migrate dev --name add-last-login-at
@@ -101,13 +101,13 @@ Answer: Fixed! The 500 error was caused by a missing database migration for
 
 ## When to Use ReAct
 
-✅ **Best for**:
+? **Best for**:
 - Debugging and investigation
 - Research tasks with unknown scope
 - Tasks requiring tool use
 - Exploratory coding (unfamiliar codebase)
 
-❌ **Not ideal for**:
+? **Not ideal for**:
 - Well-defined, repetitive tasks (just execute)
 - Simple questions (just answer)
 - Tasks where all information is already in context

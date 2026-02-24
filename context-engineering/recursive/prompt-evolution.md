@@ -16,12 +16,12 @@ Inspired by genetic algorithms, Prompt Evolution creates multiple variants of a 
 
 ```
   Generation 0          Generation 1          Generation 2
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│ Prompt A (7) │    │ Prompt A' (8)│    │ Prompt A''(9)│ ← WINNER
-│ Prompt B (5) │──► │ Prompt C' (7)│──► │ Prompt C''(8)│
-│ Prompt C (6) │    │ Prompt D' (6)│    │ Prompt E''(7)│
-│ Prompt D (4) │    └──────────────┘    └──────────────┘
-└──────────────┘
++--------------+    +--------------+    +--------------+
+� Prompt A (7) �    � Prompt A' (8)�    � Prompt A''(9)� ? WINNER
+� Prompt B (5) �--? � Prompt C' (7)�--? � Prompt C''(8)�
+� Prompt C (6) �    � Prompt D' (6)�    � Prompt E''(7)�
+� Prompt D (4) �    +--------------+    +--------------+
++--------------+
   Evaluate +           Mutate +            Mutate +
   Select Top 2         Crossover           Evaluate
 ```
@@ -88,7 +88,7 @@ but constructive. Focus on what could cause production incidents.
 **Variant C (Constrained)**:
 ```
 Review this code. You MUST find at least 3 issues. Rate severity as 
-P0/P1/P2/P3. Do NOT praise code — only report issues.
+P0/P1/P2/P3. Do NOT praise code - only report issues.
 ```
 
 ### Evaluation Results
@@ -115,7 +115,7 @@ Focus on bugs and security first, then performance, then style.
 End with a one-paragraph overall assessment.
 ```
 
-Score: **8.4**/10 — Significant improvement!
+Score: **8.4**/10 - Significant improvement!
 
 ### Generation 2 (Mutation: Add robustness)
 
@@ -129,7 +129,7 @@ For each issue:
 3. **Issue**: What's wrong and why it matters
 4. **Fix**: Suggested code change
 
-Review order: Security → Correctness → Performance → Maintainability → Style
+Review order: Security ? Correctness ? Performance ? Maintainability ? Style
 
 If the code is genuinely well-written, say so briefly, but still report 
 any issues found. If you find no issues, explicitly state "No issues found" 
@@ -138,7 +138,7 @@ any issues found. If you find no issues, explicitly state "No issues found"
 End with: Overall assessment (1 paragraph) + Risk rating (Low/Medium/High).
 ```
 
-Score: **9.1**/10 — Optimized! ✅
+Score: **9.1**/10 - Optimized! ?
 
 ## When to Use
 

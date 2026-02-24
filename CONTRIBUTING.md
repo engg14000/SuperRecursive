@@ -1,8 +1,8 @@
-# 🤝 Contributing to SuperRecursive
+# ?? Contributing to SuperRecursive
 
 Thank you for your interest in contributing! SuperRecursive thrives on community contributions from **humans and AI agents alike**.
 
-## 📋 Table of Contents
+## ?? Table of Contents
 
 - [Quick Start](#quick-start)
 - [What We Need](#what-we-need)
@@ -36,7 +36,7 @@ git push origin feat/add-my-awesome-prompt
 
 ## What We Need
 
-### 🔴 High Priority
+### ?? High Priority
 
 | Type | Description | Where to Add |
 |------|-------------|--------------|
@@ -45,7 +45,7 @@ git push origin feat/add-my-awesome-prompt
 | **Context Templates** | Structured context formats for specific use cases | `tool-name/context-templates/` |
 | **New Tool Coverage** | Prompts for tools not yet in the repo | Create new `tool-name/` folder |
 
-### 🟡 Medium Priority
+### ?? Medium Priority
 
 | Type | Description | Where to Add |
 |------|-------------|--------------|
@@ -54,7 +54,7 @@ git push origin feat/add-my-awesome-prompt
 | **Vibe Coding Moods** | New mood-based prompt styles | `vibe-coding/moods/` |
 | **Awesome List Entries** | New links for curated lists | `awesome-lists/` |
 
-### 🟢 Nice to Have
+### ?? Nice to Have
 
 | Type | Description | Where to Add |
 |------|-------------|--------------|
@@ -129,7 +129,7 @@ version: "1.0"
 
 ## Content Guidelines
 
-### Do ✅
+### Do ?
 
 - **Be specific**: Include exact model versions, tool versions
 - **Be actionable**: Prompts should be copy-paste ready
@@ -138,13 +138,13 @@ version: "1.0"
 - **Add examples**: Show input/output pairs when possible
 - **Use YAML frontmatter**: Tags, description, author, version
 
-### Don't ❌
+### Don't ?
 
-- **Don't submit untested, low-quality prompts** — quality over quantity
+- **Don't submit untested, low-quality prompts** - quality over quantity
 - **Don't duplicate** existing content without adding value (recursive upgrades welcome!)
 - **Don't include API keys, secrets**, or personal information
-- **Don't plagiarize** without attribution — reference original sources
-- **Don't submit off-topic content** — keep it AI/LLM/agent focused
+- **Don't plagiarize** without attribution - reference original sources
+- **Don't submit off-topic content** - keep it AI/LLM/agent focused
 
 ## File Naming Conventions
 
@@ -166,13 +166,13 @@ version: "1.0"
 When in doubt, follow this hierarchy:
 ```
 tool-or-section/
-├── README.md                  # Overview and index
-├── system-prompts/            # AI role definitions
-│   └── prompt-name.md
-├── context-templates/         # Structured contexts
-│   └── template-name.md
-└── internal-tools/            # Configs and scripts
-    └── tool-name.ext
++-- README.md                  # Overview and index
++-- system-prompts/            # AI role definitions
+�   +-- prompt-name.md
++-- context-templates/         # Structured contexts
+�   +-- template-name.md
++-- internal-tools/            # Configs and scripts
+    +-- tool-name.ext
 ```
 
 ## Quality Standards
@@ -217,7 +217,7 @@ If you're improving an existing prompt with recursive techniques:
 
 ## Recognition
 
-### 🏆 Hall of Fame
+### ?? Hall of Fame
 
 Contributors who submit **5+ quality prompts** get featured in our [Hall of Fame](community/hall-of-fame.md)!
 
@@ -225,10 +225,10 @@ Contributors who submit **5+ quality prompts** get featured in our [Hall of Fame
 
 | Contributions | Badge | Perks |
 |--------------|-------|-------|
-| 1-4 | 🌱 Seedling | Listed in CONTRIBUTORS |
-| 5-14 | 🌿 Growing | Hall of Fame entry |
-| 15-29 | 🌳 Established | Featured contributor badge |
-| 30+ | 🏆 Champion | Co-maintainer invitation |
+| 1-4 | ?? Seedling | Listed in CONTRIBUTORS |
+| 5-14 | ?? Growing | Hall of Fame entry |
+| 15-29 | ?? Established | Featured contributor badge |
+| 30+ | ?? Champion | Co-maintainer invitation |
 
 ### AI Agent Contributors
 
@@ -245,4 +245,4 @@ By contributing, you agree that your contributions will be licensed under the [M
 
 **Questions?** Open a [Discussion](https://github.com/engg14000/SuperRecursive/discussions) or reach out in an issue!
 
-⭐ **Thank you for making SuperRecursive better for everyone!**
+? **Thank you for making SuperRecursive better for everyone!**
